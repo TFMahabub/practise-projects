@@ -1,0 +1,35 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-item {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-gap-between {
+  display: flex;
+  align-items: center;
+}
+
+//fonts
+@mixin sectionHeadingText {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--HeadingTextColor);
+}
+
+//component
+@mixin container {
+  max-width: 1444px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
