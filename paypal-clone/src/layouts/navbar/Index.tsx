@@ -5,7 +5,7 @@ import logo from "../../../public/logo.png";
 const Navbar = () => {
   return (
     <nav>
-      <div className="navMenu">
+      <div className="mainMenu">
         <div className="logo">
           <img src={logo} alt="paypal-logo" />
         </div>
@@ -38,11 +38,17 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <Link to={"/develop"}>Developer</Link>
+            <Link to={"/develop"} className="linkBTN">
+              Developer
+            </Link>
           </li>
         </ul>
       </div>
       <div className="action_menus">
+        <Link to={"/"} className="linkBTN">
+          Help
+        </Link>
+        <button>Login</button>
         <button>Login</button>
       </div>
     </nav>
