@@ -1,10 +1,10 @@
 nav {
-  background-color: var(--white);
+  background-color: $whiteColor;
   height: $navbar-height;
   @include flex-between;
-  border-bottom: $light-border solid var(--borderColor);
+  border-bottom: $light-border solid $borderColor;
   position: relative;
-  .navMenu {
+  .mainMenu {
     @include flex-item;
     gap: 18px;
     .logo {
@@ -21,21 +21,6 @@ nav {
       @include flex-item;
       gap: 18px;
       li {
-        @include flex-between;
-        gap: 4px;
-        padding: 12px 20px;
-        border-radius: 9999px;
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--primaryDark);
-        transition: all 0.5s;
-        cursor: pointer;
-
-        &:hover {
-          color: var(--primary);
-          background-color: rgba(16, 114, 235, 0.1);
-        }
-
         .icon {
           height: 20px;
           width: 20px;
@@ -43,7 +28,7 @@ nav {
         }
 
         &:hover .icon {
-          color: var(--primary);
+          color: $primaryColor;
           transform: rotate(-180deg);
         }
 
@@ -71,105 +56,53 @@ nav {
         margin: 0 auto;
       }
       .d_menus {
+        @include flex-between;
+        gap: 4px;
+        padding: 10px 12px;
+        border-radius: $rounded-full;
+        font-size: 18px;
+        font-weight: 600;
+        color: $primaryDarkColor;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          color: $primaryColor;
+          background-color: rgba(16, 114, 235, 0.1);
+        }
       }
     }
   }
-  .actionMenus {
-    &button {
+  .action_menus {
+    @include flex-item;
+    gap: 18px;
+    & button {
+    }
+  }
+
+  .linkBTN {
+    padding: 8px 12px;
+    border-radius: $rounded-full;
+    font-size: 18px;
+    font-weight: 600;
+    color: $primaryDarkColor;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    border-radius: $rounded-full;
+    border: $light-border solid $whiteColor;
+    & a {
+      color: $primaryDarkColor;
+    }
+    &:hover {
+      color: $primaryColor;
+      border-radius: $rounded-full;
+      border: $light-border solid $borderColor;
     }
   }
 }
 
 @media (min-width: $tablet-screen) {
-  nav {
-    background-color: var(--white);
-    height: 70px;
-    @include flex-between;
-    // border: 1px solid #000;
-    .navMenu {
-      @include flex-item;
-      .logo_img {
-      }
-      .menus_container {
-        @include flex-item;
-        gap: 18px;
-        li {
-          @include flex-between;
-          gap: 4px;
-          padding: 12px 20px;
-          border-radius: 9999px;
-          font-size: 18px;
-          font-weight: 600;
-          color: var(--primaryDark);
-          transition: all 0.5s;
-          cursor: pointer;
-
-          &:hover {
-            color: var(--primary);
-            background-color: rgba(16, 114, 235, 0.1);
-          }
-
-          .icon {
-            height: 20px;
-            width: 20px;
-            transition: all 0.5s;
-          }
-
-          &:hover .icon {
-            color: var(--primary);
-            transform: rotate(-180deg);
-          }
-        }
-      }
-    }
-    .actionMenu {
-    }
-  }
 }
 
 @media (max-width: $mobile-screen) {
-  nav {
-    background-color: var(--white);
-    height: 70px;
-    @include flex-between;
-    // border: 1px solid #000;
-    .navMenu {
-      @include flex-item;
-      .logo_img {
-      }
-      .menus_container {
-        @include flex-item;
-        gap: 18px;
-        li {
-          @include flex-between;
-          gap: 4px;
-          padding: 12px 20px;
-          border-radius: 9999px;
-          font-size: 18px;
-          font-weight: 600;
-          color: var(--primaryDark);
-          transition: all 0.5s;
-          cursor: pointer;
-
-          &:hover {
-            color: var(--primary);
-            background-color: rgba(16, 114, 235, 0.1);
-          }
-
-          .icon {
-            height: 20px;
-            width: 20px;
-            transition: all 0.5s;
-          }
-
-          &:hover .icon {
-            color: var(--primary);
-            transform: rotate(-180deg);
-          }
-        }
-      }
-    }
-    .actionMenu {
-    }
-  }
 }
