@@ -26,6 +26,17 @@
   font-weight: 600;
   color: var(--HeadingTextColor);
 }
+@mixin setFont($size) {
+  @if $size == big {
+    font-size: 20px;
+  } @else if $size == medium {
+    font-size: 16px;
+  } @else if $size == small {
+    font-size: 14px;
+  } @else if $size == description {
+    font-size: 14px;
+  }
+}
 
 //component
 @mixin container {
@@ -34,8 +45,32 @@
   margin: 0 auto;
 }
 
-@mixin primaryBTN($color) {
-  padding: 8px 12px;
-  background-color: $color;
-  border: $medium-border solid $color;
+@mixin BTN($variant) {
+  @include flex-center;
+  height: 38px;
+  width: fit-content;
+  padding: 0 14px;
+  transition: all $common-duration;
+  cursor: pointer;
+  @include setFont(big);
+  @if $variant == secondary {
+    color: $primaryDarkColor;
+    background-color: $whiteColor;
+    border: $medium-border solid $primaryDarkColor;
+    border-radius: $rounded-full;
+    &:hover {
+      // transform: ;
+      color: $primaryColor;
+      border: $medium-border solid $primaryColor;
+    }
+  } @else if $variant == primary {
+    color: $primaryDarkColor;
+    background-color: $whiteColor;
+    border: $medium-border solid $primaryDarkColor;
+    border-radius: $rounded-full;
+    &:hover {
+      color: $primaryColor;
+      border: $medium-border solid $primaryColor;
+    }
+  }
 }
