@@ -75,8 +75,6 @@ nav {
   .action_menus {
     @include flex-item;
     gap: 18px;
-    & button {
-    }
   }
 
   .linkBTN {
@@ -98,6 +96,14 @@ nav {
       border-radius: $rounded-full;
       border: $light-border solid $borderColor;
     }
+  }
+
+  .primaryBTN {
+    @include BTN(secondary);
+  }
+
+  .primaryBTN {
+    @include BTN(secondary);
   }
 }
 
