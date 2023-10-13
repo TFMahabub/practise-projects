@@ -1,0 +1,35 @@
+@mixin set-font($value) {
+  @if $value == small {
+    font-size: 14px;
+  } @else if $value == medium {
+    font-size: 18px;
+  } @else if $value == large {
+    font-size: 22px;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: $max-width;
+  @media (max-width: $sm-screen) {
+    padding: 0 10px;
+  }
+  @media (min-width: $md-screen) {
+    padding: 0 20px;
+  }
+  @media (max-width: $lg-screen) {
+    padding: 0 20px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}

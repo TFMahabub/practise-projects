@@ -1,3 +1,6 @@
-@use "./sass/base";
-@use "./sass/pages";
-@use "./sass/components";
+@import "./sass/base/variables";
+@import "./sass/base/global";
+@import "./sass/base/mixins";
+
+//layouts
+@import "./sass/layouts/navbar";
