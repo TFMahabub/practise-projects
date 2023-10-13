@@ -1,0 +1,36 @@
+//colors
+$primary-color: #19a463;
+$primaryLight-color: lighten($primary-color, 30%);
+$primaryDark-color: darken($primary-color, 30%);
+$white: #fff;
+$text-dark: #404145;
+$text-light: #7a7d85;
+$background-color: #f5f5f5;
+$border-color: #f1f2f3;
+
+//screen
+$sm-screen: 640px;
+$md-screen: 768px;
+$lg-screen: 1024px;
+$max-width: 1440px;
+
+//fonts
+$font-sm: 14px;
+$font-base: 16px;
+$font-md: 18px;
+
+$font-light: 300;
+$font-base: 400;
+$font-medium: 500;
+$font-semiBold: 600;
+$font-bold: 700;
+
+//gaps
+$sm-gap: 5px;
+$common-gap: 20px;
+$md-gap: 30px;
+$lg-gap: 40px;
+
+//border
+$border-light: 1px solid $border-color;
+$border-medium: 2px solid $border-color;

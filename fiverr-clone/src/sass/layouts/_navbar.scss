@@ -1,0 +1,53 @@
+nav {
+  @include flex-center;
+  height: 80px;
+  border-bottom: $border-medium;
+  background-color: $white;
+  .nav-container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .right-side {
+      @include flex-align;
+      gap: $md-gap;
+      .logo {
+        & img {
+          width: 100px;
+        }
+      }
+      & ul {
+        @include flex-align;
+        gap: $sm-gap;
+
+        & li {
+          color: $text-dark;
+          font-size: 17px;
+          font-weight: $font-medium;
+          @include flex-align;
+          gap: $sm-gap;
+          padding: 10px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: lighten($text-dark, 70%);
+          }
+
+          & svg {
+            font-size: 24px;
+            color: $text-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm-screen) {
+  .nav-container {
+    @include container;
+  }
+}
