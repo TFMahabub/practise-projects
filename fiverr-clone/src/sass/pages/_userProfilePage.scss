@@ -1,0 +1,97 @@
+.user-profile-page {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-column-gap: 50px;
+  @include container;
+  // padding: 100px 0;
+  & aside {
+    width: 100%;
+
+    .user-info {
+      background-color: $white;
+      border: $border-light;
+      position: relative;
+
+      .online {
+        position: absolute;
+        font-size: $font-sm;
+        top: 30px;
+        right: 30px;
+        color: $primary-color;
+        padding: 1px 8px;
+        border: 1px solid $primary-color;
+        border-radius: $rounded-full;
+      }
+
+      .profile-info {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $sm-gap;
+
+        .profile-image {
+          width: 50%;
+          overflow: hidden;
+          position: relative;
+
+          & img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: $rounded-full;
+          }
+          .badge-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+
+            & img {
+              width: 100%;
+              aspect-ratio: 1/1;
+              border-radius: $rounded-full;
+            }
+          }
+        }
+        & h1 {
+          font-size: $font-lg;
+          color: $text-dark;
+        }
+        .user-name {
+          font-size: $font-base;
+          color: $text-light;
+        }
+        .bio-text {
+          font-size: $font-base;
+          color: $text-dark;
+        }
+        .profile-review {
+          @include flex-align;
+          gap: $sm-gap;
+
+          .stars {
+            @include flex-align;
+            gap: $xs-gap;
+
+            & svg {
+              font-size: $font-md;
+              color: $star-color;
+            }
+          }
+        }
+      }
+
+      .contact-info {
+      }
+      .available.info {
+      }
+    }
+  }
+  & main {
+    width: 100%;
+    background-color: $white;
+    border: $border-light;
+  }
+}
