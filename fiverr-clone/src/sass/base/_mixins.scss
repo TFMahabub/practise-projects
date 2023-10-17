@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-@mixin container {
+@mixin nav-container {
   max-width: $max-width;
   @media (max-width: $sm-screen) {
     padding: 0 10px;
@@ -26,7 +26,27 @@
   @media (min-width: $md-screen) {
     padding: 0 20px;
   }
-  @media (max-width: $lg-screen) {
+  @media (min-width: $lg-screen) {
+    padding: 0 20px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}
+
+@mixin container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $max-width;
+  @media (max-width: $sm-screen) {
+    width: 90%;
+    padding: 0 10px;
+  }
+  @media (min-width: $md-screen) {
+    width: 90%;
+    padding: 0 20px;
+  }
+  @media (min-width: $lg-screen) {
     padding: 0 20px;
   }
   @media (min-width: 1440px) {

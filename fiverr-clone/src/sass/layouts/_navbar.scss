@@ -4,7 +4,7 @@ nav {
   border-bottom: $border-medium;
   background-color: $white;
   .nav-container {
-    @include container;
+    @include nav-container;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +24,7 @@ nav {
         & li {
           color: $text-dark;
           font-size: 17px;
-          font-weight: $font-medium;
+          font-weight: $font-semiBold;
           @include flex-align;
           gap: $sm-gap;
           padding: 8px 12px;
@@ -96,7 +96,7 @@ nav {
 
         & a {
           color: $text-dark;
-          font-weight: $font-medium;
+          font-weight: $font-semiBold;
         }
 
         & a:hover {
