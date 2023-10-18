@@ -8,6 +8,10 @@
     width: 100%;
 
     .user-info {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
       background-color: $white;
       border: $border-light;
       position: relative;
@@ -23,8 +27,13 @@
         border-radius: $rounded-full;
       }
 
+      hr {
+        height: 1px;
+        background-color: $border-color;
+        border: none;
+      }
+
       .profile-info {
-        padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -70,6 +79,7 @@
         .profile-review {
           @include flex-align;
           gap: $sm-gap;
+          margin-bottom: 20px;
 
           .stars {
             @include flex-align;
@@ -84,8 +94,35 @@
       }
 
       .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .item {
+          @include flex-between;
+
+          .key {
+            @include flex-align;
+            gap: 10px;
+
+            & svg {
+              color: $text-dark;
+            }
+          }
+        }
       }
-      .available.info {
+      .available-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .key {
+          @include flex-align;
+          gap: 10px;
+
+          & svg {
+            color: $text-dark;
+          }
+        }
       }
     }
   }

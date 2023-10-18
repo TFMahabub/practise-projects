@@ -1,6 +1,9 @@
 import { AiTwotoneStar } from "react-icons/ai";
+import { MdLocationOn } from "react-icons/md";
+import { RiSendPlaneFill, RiTimeLine, RiUser3Fill } from "react-icons/ri";
 import Level1Bagde from "../../assets/level-2-badge.png";
 import profileImage from "../../assets/profile-image.jpg";
+import SecondaryButton from "../../components/buttons/SecondaryButton";
 import BaseText from "../../components/texts/BaseText";
 
 const UserProfilePage = () => {
@@ -38,11 +41,68 @@ const UserProfilePage = () => {
                 (245 reviews)
               </BaseText>
             </div>
-            <button></button>
+            <SecondaryButton>Preview Fiverr Profile</SecondaryButton>
           </div>
-          <div className="contact-info"></div>
-          <div className="available-info"></div>
+          <hr />
+          <div className="contact-info">
+            <div className="item">
+              <div className="key">
+                <MdLocationOn />
+                <BaseText color="dark" weight="base">
+                  From
+                </BaseText>
+              </div>
+              <BaseText color="dark" weight="bold">
+                Bangladesh
+              </BaseText>
+            </div>
+            <div className="item">
+              <div className="key">
+                <RiUser3Fill />
+                <BaseText color="dark" weight="base">
+                  Member since
+                </BaseText>
+              </div>
+              <BaseText color="dark" weight="bold">
+                Aug 2019
+              </BaseText>
+            </div>
+            <div className="item">
+              <div className="key">
+                <RiTimeLine />
+                <BaseText color="dark" weight="base">
+                  Avg. Response Time
+                </BaseText>
+              </div>
+              <BaseText color="dark" weight="bold">
+                1 hour
+              </BaseText>
+            </div>
+            <div className="item">
+              <div className="key">
+                <RiSendPlaneFill />
+                <BaseText color="dark" weight="base">
+                  Last Delivery
+                </BaseText>
+              </div>
+              <BaseText color="dark" weight="bold">
+                1 hour
+              </BaseText>
+            </div>
+          </div>
+          <hr />
+          <div className="available-info">
+            <div className="key">
+              <RiSendPlaneFill />
+              <BaseText color="dark" weight="base">
+                Available
+              </BaseText>
+            </div>
+            <SecondaryButton>Edit</SecondaryButton>
+          </div>
         </div>
+        <div className="among-my-client"></div>
+        <div className="my-portfolio"></div>
       </aside>
       <main>main part</main>
     </div>
