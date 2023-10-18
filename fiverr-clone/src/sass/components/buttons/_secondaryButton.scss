@@ -1,0 +1,18 @@
+.secondary-button-cp {
+  height: 38px;
+  width: 100%;
+  border: 1px solid $text-light;
+  border-radius: 4px;
+  background-color: $white;
+  font-size: $font-bs;
+  font-weight: $font-bold;
+  color: $text-dark;
+  @include flex-center;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $white;
+    background-color: $text-light;
+  }
+}
