@@ -45,16 +45,14 @@
   max-width: $max-width;
   @media (max-width: $sm-screen) {
     width: 90%;
-    padding: 0 10px;
   }
   @media (min-width: $md-screen) {
     width: 90%;
-    padding: 0 20px;
   }
   @media (min-width: $lg-screen) {
-    padding: 0 20px;
+    width: 90%;
   }
   @media (min-width: 1440px) {
-    padding: 0;
+    width: 90%;
   }
 }
