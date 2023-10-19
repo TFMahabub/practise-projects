@@ -22,6 +22,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
 
 @mixin nav-container {
   max-width: $max-width;
