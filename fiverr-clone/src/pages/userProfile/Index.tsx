@@ -104,7 +104,14 @@ const UserProfilePage = () => {
         <div className="among-my-client"></div>
         <div className="my-portfolio"></div>
       </aside>
-      <main>main part</main>
+      <main>
+        <div className="user-gigs">
+          <div className="menubar">
+            <p className="menu">Active Gigs</p>
+          </div>
+          <div className="gigs-parent">gig cart</div>
+        </div>
+      </main>
     </div>
   );
 };

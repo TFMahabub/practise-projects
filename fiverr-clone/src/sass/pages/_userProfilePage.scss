@@ -128,7 +128,37 @@
   }
   & main {
     width: 100%;
-    background-color: $white;
-    border: $border-light;
+
+    .user-gigs {
+      @include flex-column($md-gap);
+
+      & .menubar {
+        height: 60px;
+        width: 100%;
+        background-color: $white;
+        border: $border-light;
+        @include flex-align;
+        gap: $md-gap;
+        padding: 0 20px;
+        // position: relative;
+
+        & .menu {
+          text-transform: uppercase;
+          font-weight: $font-semiBold;
+          color: $text-dark;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            bottom: 0;
+            // left: 6px;
+            color: aquamarine;
+            height: 2px;
+            // width: 100%;
+            background-color: aquamarine;
+          }
+        }
+      }
+    }
   }
 }
