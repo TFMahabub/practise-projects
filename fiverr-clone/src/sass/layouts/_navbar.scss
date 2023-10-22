@@ -89,7 +89,7 @@ nav {
       }
       .doller {
         @include flex-center;
-        padding: 2px 4px;
+        padding: 0 4px;
         margin: 0 10px;
         border: 1px solid $text-dark;
         border-radius: 6px;

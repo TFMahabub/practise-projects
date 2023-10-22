@@ -1,0 +1,16 @@
+.gig-cart {
+  width: 250px;
+  border: $border-light;
+  aspect-ratio: 1/1.1;
+
+  & .gig-img {
+    width: 100%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+
+      aspect-ratio: 1.5/1;
+    }
+  }
+}
