@@ -4,6 +4,7 @@ import { RiSendPlaneFill, RiTimeLine, RiUser3Fill } from "react-icons/ri";
 import Level1Bagde from "../../assets/level-2-badge.png";
 import profileImage from "../../assets/profile-image.jpg";
 import SecondaryButton from "../../components/buttons/SecondaryButton";
+import GigCart from "../../components/cart/GigCart";
 import BaseText from "../../components/texts/BaseText";
 
 const UserProfilePage = () => {
@@ -109,7 +110,9 @@ const UserProfilePage = () => {
           <div className="menubar">
             <p className="menu">Active Gigs</p>
           </div>
-          <div className="gigs-parent">gig cart</div>
+          <div className="gigs-parent">
+            <GigCart />
+          </div>
         </div>
       </main>
     </div>

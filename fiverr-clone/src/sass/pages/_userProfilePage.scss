@@ -40,7 +40,7 @@
         gap: $sm-gap;
 
         .profile-image {
-          width: 50%;
+          width: 40%;
           overflow: hidden;
           position: relative;
 
@@ -158,6 +158,10 @@
             background-color: aquamarine;
           }
         }
+      }
+      & .gigs-parent {
+        display: grid;
+        // gridco
       }
     }
   }
