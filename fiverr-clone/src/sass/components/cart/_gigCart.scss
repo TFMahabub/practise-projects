@@ -3,6 +3,7 @@
   background-color: $white;
   border: $border-light;
   aspect-ratio: 1/1.1;
+  overflow: hidden;
 
   & .gig-img {
     width: 100%;
@@ -16,9 +17,9 @@
   }
   & .content {
     padding: 8px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     & .title {
       font-size: $font-bs;
